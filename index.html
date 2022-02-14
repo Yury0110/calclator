@@ -8,26 +8,29 @@
         <link href="./styles.css" rel="stylesheet" >
 
         <title>Калькулятор</title>
-
-        <script src="./index.js"></script>
+        
+        
+        
     </head>
-
+    
     <body class="calc_block">
+
+        
         <input class="num" id="num1" />
 
         <div class="operators_btn" id="operators_btn">
-            <button class="btn" id="plus" onclick="op='+'">+</button>
-            <button class="btn" id="minus" onclick="op='-'">-</button>
-            <button class="btn" id="times" onclick="op='*'">x</button>
-            <button class="btn" id="divide" onclick="op='/'">:</button>
+            <button class="btn" id="plus" onclick="op='+'; disabledButton()" >+</button>
+            <button class="btn" id="minus" onclick="op='-'; disabledButton()" >-</button>
+            <button class="btn" id="times" onclick="op='*'; disabledButton()" >x</button>
+            <button class="btn" id="divide" onclick="op='/'; disabledButton()" >:</button>
         </div>
 
         <input class="num" id="num2" />
         <br/>
-        <button class="btn" id="total" onclick="calc()">Посчитать</button>
+        <button disabled="disabled" class="btn" id="total" onclick="calc()">Посчитать</button>
 
         <p id="result" ></p>
 
-        
-
+        <script src="./index.js"></script>
+        <script src="./disabledButton.js"></script>
     </body>
