@@ -1,4 +1,4 @@
-<script>
+
             let op;
 
             function calc() {
@@ -6,7 +6,7 @@
 
                 let num1 = Number(document.getElementById("num1").value);
                 let num2 = Number(document.getElementById("num2").value);
-                debugger
+                console.log(op);
                 switch(op) {
                     case'+':
                         result = num1 + num2;
@@ -17,7 +17,7 @@
                     case'*':
                         result = num1 * num2;
                         break;
-                    case':':
+                    case'/':
                         result = num1 / num2;
                         break;
                 }
@@ -36,5 +36,4 @@
                 // }
 
                  document.getElementById('result').innerHTML=result;
-            }
-        </script>
+            };
